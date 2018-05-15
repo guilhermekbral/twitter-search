@@ -8,3 +8,5 @@ Next steps:
 - Improve the view, making it prettier.
 - work with ajax.
 - Add number of tweets that the user wants returned, and add pagination based on number of choice.
+
+Application deployed to Heroku, available in: https://shrouded-hollows-32403.herokuapp.com/
