@@ -1,0 +1,26 @@
+.container-fluid
+  .row.col-12
+    .title.text-center
+      %h1 Twitter Search Application
+  .row.col-12
+    .input-group
+      %form.navbar-form{:action => "", :role => "search"}
+        .form-group
+          %input.form-control#search_bar{:method => "get", :name => "term", :placeholder => "Search for tweets with:", :type => "text"}/
+        %button.btn.btn-default{:type => "submit"} Search Tweets!
+
+  - if @tweets.present?
+    .row.col-7
+      %table.table.table-bordered.table-striped
+        %thead.thead-light
+          %tr
+            %th Tweets found!
+
+        %tbody.table-light
+          - @tweets.each do |tweet|
+            %tr
+              %td= tweet.text
+  - else
+    .row.piped.col-12
+      %h3= 'No tweets found. Try to search a term! :)'
+
