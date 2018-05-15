@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Twitter search project.
+Right now we have a simple application that let you search for tweets. 20 tweets, mixed between recents and popular, will be shown.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Next steps:
+- Add specs for the service
+- Improve the view, making it prettier.
+- work with ajax.
+- Add number of tweets that the user wants returned, and add pagination based on number of choice.
